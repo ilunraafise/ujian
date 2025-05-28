@@ -34,25 +34,17 @@
                             <p class="font-semibold text-white transition-all duration-300 hover:text-white">Ujian</p>
                         </a>
                     </li>
-                    <li>
-                        <a href="" class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-[#047333]">
-                            <div>
-                                <img src="{{asset('/images/icons/profile-2user.svg')}}" alt="icon">
-                            </div>
-                            <p class="font-semibold transition-all duration-300 hover:text-white">Siswa</p>
-                        </a>
-                    </li>
                 </ul>
                 <ul class="flex flex-col gap-3">
                     <li>
                         <h3 class="font-bold text-xs text-[#A5ABB2]">OTHERS</h3>
                     </li>
                     <li>
-                        <a href="" class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-[#047333]">
+                        <a href="{{route('profile.edit')}}" class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-[#047333]">
                             <div>
                                 <img src="{{asset('images/icons/setting-2.svg')}}" alt="icon">
                             </div>
-                            <p class="font-semibold transition-all duration-300 hover:text-white">Settings</p>
+                            <p class="font-semibold transition-all duration-300 hover:text-white">Setting Profile</p>
                         </a>
                     </li>
                     <li>
@@ -150,15 +142,6 @@
                     <div class="flex gap-5 items-center">
                         <a href="#" class="group relative flex flex-col w-full items-center gap-5 p-[30px_16px] border border-[#EEEEEE] rounded-[30px] transition-all duration-300 aria-checked:border-2 aria-checked:border-[#0A090B]" data-group="course-type" aria-checked="false" onclick="handleActiveAnchor(this)">
                             <div class="w-[70px] h-[70px] flex shrink-0 overflow-hidden">
-                                <img src="{{asset('images/icons/onboarding.svg')}}" class="w-full h-full" alt="icon">
-                            </div>
-                            <span class="text-center mx-auto font-semibold">Onboarding</span>
-                            <div class="absolute transform -translate-x-1/2 -translate-y-1/2 top-[24px] right-0 hidden transition-all duration-300 group-aria-checked:block">
-                                <img src="{{asset('images/icons/tick-circle.svg')}}" alt="icon">
-                            </div>
-                        </a>
-                        <a href="#" class="group relative flex flex-col w-full items-center gap-5 p-[30px_16px] border border-[#EEEEEE] rounded-[30px] transition-all duration-300 aria-checked:border-2 aria-checked:border-[#0A090B]" data-group="course-type" aria-checked="false" onclick="handleActiveAnchor(this)">
-                            <div class="w-[70px] h-[70px] flex shrink-0 overflow-hidden">
                                 <img src="{{asset('images/icons/module.svg')}}" class="w-full h-full" alt="icon">
                             </div>
                             <span class="text-center mx-auto font-semibold">CBT Module</span>
@@ -212,7 +195,6 @@
                     I have read terms and conditions
                 </label>
                 <div class="flex items-center gap-5">
-                    <a href="" class="w-full h-[52px] p-[14px_20px] bg-[#0A090B] rounded-full font-semibold text-white transition-all duration-300 text-center">Simpan Draft</a>
                     <button type="submit" class="w-full h-[52px] p-[14px_20px] bg-[#01923F] rounded-full font-bold text-white transition-all duration-300 hover:shadow-[0_4px_15px_0_#6436F14D] text-center">Simpan Ujian</button type="submit">
                 </div>
             </form>

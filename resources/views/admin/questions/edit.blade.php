@@ -34,25 +34,17 @@
                             <p class="font-semibold text-white transition-all duration-300 hover:text-white">Ujian</p>
                         </a>
                     </li>
-                    <li>
-                        <a href="" class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-[#047333]">
-                            <div>
-                                <img src="{{asset('/images/icons/profile-2user.svg')}}" alt="icon">
-                            </div>
-                            <p class="font-semibold transition-all duration-300 hover:text-white">Siswa</p>
-                        </a>
-                    </li>
                 </ul>
                 <ul class="flex flex-col gap-3">
                     <li>
                         <h3 class="font-bold text-xs text-[#A5ABB2]">OTHERS</h3>
                     </li>
                     <li>
-                        <a href="" class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-[#047333]">
+                        <a href="{{route('profile.edit')}}" class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-[#047333]">
                             <div>
-                                <img src="{{asset('/images/icons/setting-2.svg')}}" alt="icon">
+                                <img src="{{asset('images/icons/setting-2.svg')}}" alt="icon">
                             </div>
-                            <p class="font-semibold transition-all duration-300 hover:text-white">Settings</p>
+                            <p class="font-semibold transition-all duration-300 hover:text-white">Setting Profile</p>
                         </a>
                     </li>
                     

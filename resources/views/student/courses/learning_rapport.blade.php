@@ -40,11 +40,11 @@
                         <h3 class="font-bold text-xs text-[#A5ABB2]">OTHERS</h3>
                     </li>
                     <li>
-                        <a href="" class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-[#047333]">
+                        <a href="{{route('profile.edit')}}" class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-[#047333]">
                             <div>
                                 <img src="{{asset('images/icons/setting-2.svg')}}" alt="icon">
                             </div>
-                            <p class="font-semibold transition-all duration-300 hover:text-white">Settings</p>
+                            <p class="font-semibold transition-all duration-300 hover:text-white">Setting Profile</p>
                         </a>
                     </li>
                     <li>
@@ -117,13 +117,8 @@
                     </div>
                 </div>
                 <div class="flex items-center">
-                    @if($passed)
                     <p class="p-[16px_20px] rounded-[10px] bg-[#06BC65] font-bold text-lg text-white outline-[#06BC65] outline-dashed outline-[3px] outline-offset-[7px] mr-[10px]">
-                        Lulus</p>
-                    @else
-                    <p class="p-[16px_20px] rounded-[10px] bg-[#FD445E] font-bold text-lg text-white outline-[#FD445E] outline-dashed outline-[3px] outline-offset-[7px] mr-[10px]">
-                        Tidak Lulus</p>
-                    @endif
+                        Nilai: {{ $score }}</p>
                 </div>
             </div>
             <div class="result flex flex-col gap-5 mx-[70px] w-[870px] mt-[30px]">
@@ -150,11 +145,9 @@
                         Belum ada jawaban
                     </p>
                 @endforelse
-
             </div>
             <div class="options flex items-center mx-[70px] gap-5 mt-[30px]">
-                <a href="" class="w-fit h-[52px] p-[14px_20px] bg-[#0A090B] rounded-full font-semibold text-white transition-all duration-300 text-center">Ujian Ulang</a>
-                <a href="" class="w-fit h-[52px] p-[14px_20px] bg-[#01923F] rounded-full font-bold text-white transition-all duration-300 hover:shadow-[0_4px_15px_0_#6436F14D] text-center">Kontak Guru</a>
+                <a href="{{route('dashboard.learning.index')}}" class="w-fit h-[52px] p-[14px_20px] bg-[#01923F] rounded-full font-bold text-white transition-all duration-300 hover:shadow-[0_4px_15px_0_#6436F14D] text-center">Selesai</a>
             </div>
         </div>
     </section>

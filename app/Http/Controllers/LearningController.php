@@ -77,10 +77,14 @@ class LearningController extends Controller
 
         $totalQuestions = CourseQuestion::where('course_id', $course->id)->count();
         $correctAnswersCount = $studentAnswers->where('answer', 'correct')->count();
+        $score = ($correctAnswersCount / $totalQuestions) * 100;
+        $formattedScore = number_format($score, 2);
         $passed = $correctAnswersCount == $totalQuestions;
+        
 
         return view('student.courses.learning_rapport', [
             'passed' => $passed,
+            'score' => $formattedScore,
             'course' => $course,
             'studentAnswers' => $studentAnswers,
             'totalQuestions' => $totalQuestions,

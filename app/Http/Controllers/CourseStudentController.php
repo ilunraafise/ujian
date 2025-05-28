@@ -77,7 +77,7 @@ class CourseStudentController extends Controller
     {
         $request->validate([
             'email' => 'nullable|string',
-            'file' => 'required|mimes:xlsx,csv'
+            'file' => 'nullable|mimes:xlsx,csv'
         ]);
 
         $user = User::where('email', $request->email)->first();
