@@ -19,11 +19,11 @@
                         <h3 class="font-bold text-xs text-[#A5ABB2]">MENU</h3>
                     </li>
                     <li>
-                        <a href="" class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-[#047333]">
+                        <a href="{{route('dashboard')}}" class="p-[10px_16px] flex items-center gap-[14px] rounded-full h-11 transition-all duration-300 hover:bg-[#047333]">
                             <div>
                                 <img src="{{asset('/images/icons/home-hashtag.svg')}}" alt="icon">
                             </div>
-                            <p class="font-semibold transition-all duration-300 hover:text-white">Overview</p>
+                            <p class="font-semibold transition-all duration-300 hover:text-white">Dashboard</p>
                         </a>
                     </li>
                     <li>
